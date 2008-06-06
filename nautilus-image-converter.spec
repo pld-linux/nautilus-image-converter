@@ -2,7 +2,7 @@ Summary:	Nautilus extension to mass resize or rotate images
 Summary(pl.UTF-8):	Rozszerzenie Nautilusa pozwalające masowo zmieniać rozmiar i obracać pliki graficzne
 Name:		nautilus-image-converter
 Version:	0.3.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/nautilus-image-converter/0.3/%{name}-%{version}.tar.bz2
@@ -20,6 +20,10 @@ BuildRequires:	nautilus-devel >= 2.22.0
 BuildRequires:	pkgconfig
 Requires:	ImageMagick
 Requires:	nautilus >= 2.22.0
+Suggests:	ImageMagick-coder-jpeg
+Suggests:	ImageMagick-coder-jpeg2
+Suggests:	ImageMagick-coder-png
+Suggests:	ImageMagick-coder-tiff
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
